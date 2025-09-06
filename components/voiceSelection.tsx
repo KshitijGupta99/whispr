@@ -1,9 +1,10 @@
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Pressable } from "react-native";
 import { PlayIcon } from "./icons/playIcon";
+import { router } from "expo-router";
 
 export default function VoiceSelection({ VoiceName = "Emma (recommended)", isrecommended = false }: { VoiceName: string, isrecommended?: boolean }) {
     return(
-        <View style={styles.voiceSelectionContainer}>
+        <Pressable onPress={() => {router.push("/(tabs)/loading")}} style={styles.voiceSelectionContainer}>
             <View style={styles.textContainer}>
                 <View style={styles.upperTextContainer}>
                     <Text style={styles.upperText}>{VoiceName}  </Text>
@@ -16,7 +17,7 @@ export default function VoiceSelection({ VoiceName = "Emma (recommended)", isrec
                     <PlayIcon size={56}/>
                 </View>
             </View>
-        </View>
+        </Pressable>
     )
 }
 const styles = StyleSheet.create({
