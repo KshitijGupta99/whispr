@@ -13,7 +13,7 @@ const Colors = {
     surface: "#ffffff",
     error: "#b00020",
     text: {
-        primary: "#000000",
+        primary: "#162029",
         secondary: "#4985FA",
     },
 };
