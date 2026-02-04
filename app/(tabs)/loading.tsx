@@ -1,8 +1,13 @@
 import { SparkleIcon } from "@/components/icons/sparkle";
 import { StyleSheet, Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
 
 export default function Loading() {
+  setTimeout(() => {
+    router.replace("/(tabs)/story");
+  }, 3000);
+
   return (
     <View style={styles.body}>
       <LinearGradient
