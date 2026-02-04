@@ -40,14 +40,16 @@ export default function InputButton({ label }: InputButtonProps) {
 const styles = StyleSheet.create({
   button: {
     display: "flex",
-    padding: 1.5*16,
+    padding: 24,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    gap: 0.75*16,
-    borderRadius: 1.5*16,
+    gap: 12,
+    borderRadius: 24,
     backgroundColor: "#FFF",
     flex: 1,
+    height: 135,
+    width: 189,
   },
   buttonLogo: {
     padding: 8,
@@ -66,8 +68,9 @@ const styles = StyleSheet.create({
     height: 48,
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 12,
     backgroundColor: "#F0F5FF",
+    borderRadius: 200000,
+
   },
   uploadIconContainer: {
     width: 48,
@@ -76,6 +79,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 12,
     backgroundColor: "#F0F5FF",
+    borderRadius: 200000,
   },
   iconText: {
     fontSize: 28,

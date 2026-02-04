@@ -20,6 +20,19 @@ export default function HomeScreen() {
         <InputButton label ="Voice" />
         <InputButton label ="Upload" />
       </View>
+      <View style={styles.lowerContainer}>
+        <TextInput style={styles.inputText} placeholder="Type your prompt here..." />
+        {/* <Text style={styles.lowerText}>Don't worry, you can change this later!</Text> */}
+      </View>
+      <View>
+        <Pressable onPress={() => router.push("/create")} style={{backgroundColor: colors.primary, paddingVertical: 12, paddingHorizontal: 24, borderRadius: 200000}}>
+          <Text style={styles.createButtonText}>Let's Create Storybook -></Text>
+        </Pressable>
+        <View style={{marginTop: 68}}>
+          <Text style={styles.lowerText}>Try: "Turn my wedding speech into an audiobook"</Text>
+          <Text style={styles.lowerText}>Or: "I wrote a children's story I'd like narrated"</Text>
+        </View>
+      </View>
       
       
     </View>
@@ -33,18 +46,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-start",
     paddingTop: 24,
+    // fill: "var(--Bg-colors-grey-light, #F9FBFF)",
+    backgroundColor: "#F9FBFF",
   },
   upperContainer: {
     flexDirection: "column",
     alignItems: "center",
     gap: 10,
-    height: "30%",
+    height: "20%",
     // height: "30%",
     // justifyContent: "flex-start",
-    backgroundColor: "red",
+    // backgroundColor: "red",
   },
   textContainer: {
-    backgroundColor: "grey",
+    // backgroundColor: "grey",
     paddingHorizontal: 16,
     paddingBottom: 40,
     borderRadius: 16,
@@ -58,7 +73,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontStyle: "normal",
     fontWeight: "500",
-    backgroundColor: "green"
+    // backgroundColor: "green"
     // lineHeight: "normal",
   },
   logoContainer: {
@@ -70,9 +85,61 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
-    backgroundColor: "blue",
+    paddingHorizontal: 16,
+    // backgroundColor: "blue",
     borderRadius: 16,
     height: 135
+  },
+  lowerContainer: {
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "center",
+    gap: 10,
+    paddingHorizontal: 16,
+    // paddingVertical: 24,
+    // backgroundColor: "purple",
+    borderRadius: 16,
+    marginTop: 24,
+  },
+  lowerText: {
+    color: "#162029",
+    textAlign: "center",
+    leadingTrim: "both",
+    textEdge: "cap",
+    fontFamily: "Euclid Circular B",
+    fontSize: 16,
+    fontStyle: "normal",
+    fontWeight: 400,
+    // lineHeight: "normal",
+    // lineHeight: "normal",
+  },
+  inputText: {
+    // minHeight: 48,
+    textAlignVertical: "top",
+    width: 378,
+    maxHeight: 376,
+    padding: 20,
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    gap: 16,
+    flex: 1,
+    alignSelf: "stretch",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 16,
+  },
+  createButtonText: {
+    color: "#FFF",
+    borderRadius: 200000,
+    backgroundColor: "#4985FA",
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontFamily: "Euclid Circular B",
+    fontSize: 16,
+    fontStyle: "normal",
+    fontWeight: "400",
+    width: 390,
+    height: 52,
+    // lineHeight: "normal",
   },
 });
 
