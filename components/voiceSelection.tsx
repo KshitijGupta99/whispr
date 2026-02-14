@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         gap: 10,
     },
     lowerText:{
-        color: "var(--Text-colors-secondary-new, #646E7D)",
+        color: "#646E7D",
         fontFamily: "Euclid Circular B",
         fontSize: 14,
         fontStyle: "normal",
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         alignSelf: "stretch",
         borderRadius: 20,
-        backgroundColor: "var(--Bg-colors-opaque, #FFF)",
+        backgroundColor: "#FFFFFF",
     },
     textContainer: {
         display: "flex",

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         textAlign: "left",
     },
     titleText:{
-        color: "var(--Text-colors-primary-new, #162029)",
+        color: "#162029",
         fontFamily: "Euclid Circular B",
         fontSize: 16,
         fontStyle: "normal",
@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
         alignSelf: "stretch",
         borderRadius: 16,
-        backgroundColor: "var(--Bg-colors-opaque, #FFF)",
+        backgroundColor: "#FFFFFF",
     }
 })

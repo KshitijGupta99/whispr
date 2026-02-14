@@ -78,7 +78,7 @@ export default function Story() {
 }
 const styles = StyleSheet.create({
   createText:{
-    color: "var(--Text-colors-primary-inverted, #FFF)",
+    color: "#FFFFFF",
     textAlign: "center",
     fontFamily: "Euclid Circular B",
     fontSize: 16,
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#4985FA",
     borderStyle: "solid",
-    backgroundColor: "var(--Bg-colors-opaque, #FFF)",
+    backgroundColor: "#FFFFFF",
   },
   infoContainer:{
     display: "flex",
@@ -138,11 +138,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 8,
     borderRadius: 20,
-    backgroundColor: "var(--Bg-colors-opaque, #FFF)",
-    boxShadow: "1px 1px 12px 0 rgba(0, 0, 0, 0.08)",
+    backgroundColor: "#FFFFFF",
+    shadowColor: "#000000",
+    shadowOffset: { width: 1, height: 1 },
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    elevation: 3,
   },
   nextChapterHeaderText: {
-    color: "var(--Text-colors-primary-new, #162029)",
+    color: "#162029",
     textAlign: "center",
     // leadingTrim: "both",
     // textEdge: "cap",
@@ -193,7 +197,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 10,
     borderRadius: 200000,
-    backgroundColor: "var(--Bg-colors-opaque, #FFF)",
+    backgroundColor: "#FFFFFF",
   },
   pausePlayContainer:{
     display: "flex",
@@ -202,7 +206,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 10,
     borderRadius: 20000000,
-    backgroundColor: "linear-gradient(156deg, #FF9D56 0%, #4985FA 100%)",
+    backgroundColor: "#FF9D56",
   },
   lastPlayButton:{
     display: "flex",
@@ -226,7 +230,7 @@ const styles = StyleSheet.create({
     gap: 24,
   },
   totalPlaytime:{
-    color: "var(--Text-colors-secondary-new, #646E7D)",
+    color: "#646E7D",
     textAlign: "center",
     fontFamily: "Euclid Circular B",
     fontSize: 14,
@@ -235,7 +239,7 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   currRunPlayTime: {
-    color: "var(--Text-colors-secondary-new, #646E7D)",
+    color: "#646E7D",
     textAlign: "center",
     fontFamily: "Euclid Circular B",
     fontSize: 16,
@@ -255,7 +259,7 @@ const styles = StyleSheet.create({
     marginTop: 16*2,
     height: "100%",
     // marginHorizontal: 16,
-    backgroundColor: "var(--Bg-colors-light, #F0F3FA)",
+    backgroundColor: "#F0F3FA",
   },
   playWaveContainer: {
     display: "flex",
@@ -266,7 +270,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   playAreaChapterDesc: {
-    color: "var(--Text-colors-secondary-new, #646E7D)",
+    color: "#646E7D",
     textAlign: "center",
     fontFamily: "Euclid Circular B",
     fontSize: 14,
@@ -275,7 +279,7 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   playAreaTitle: {
-    color: "var(--Text-colors-primary-new, #162029)",
+    color: "#162029",
     textAlign: "center",
     fontFamily: "Euclid Circular B",
     fontSize: 16,
@@ -301,7 +305,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 24,
     alignSelf: "stretch",
-    backgroundColor: "var(--Bg-colors-opaque, #FFF)",
+    backgroundColor: "#FFFFFF",
     borderRadius: 20,
   },
   uppercontainer: {

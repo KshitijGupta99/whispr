@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 24,
     },
     lowerText:{
-        color: "var(--Text-colors-primary-new, #162029)",
+        color: "#162029",
         textAlign: "center",
         fontFamily: "Euclid Circular B",
         fontSize: 20,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         lineHeight: 22,
     },
     upperText:{
-        color: "var(--Text-colors-primary-new, #162029)",
+        color: "#162029",
         textAlign: "center",
         fontFamily: "Euclid Circular B",
         fontSize: 24,

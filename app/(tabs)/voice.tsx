@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignSelf: "stretch",
         borderRadius: 16,
-        backgroundColor: "var(--Bg-colors-opaque, #FFF)",
+        backgroundColor: "#FFFFFF",
     },
     sampleText:{
         color:  "#162029",

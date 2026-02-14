@@ -10,7 +10,7 @@ export default function HomeScreen() {
     <View style={styles.body}>
       <View style={styles.upperContainer}>
         <View style={styles.logoContainer}>
-          <SparkleIcon size={48} color={colors.primary} />
+          {/* <SparkleIcon size={48} color={colors.primary} /> */}
         </View>
         <View style={styles.textContainer}>
           <Text style={styles.upperText}>What would you like to make today?</Text>
@@ -25,9 +25,9 @@ export default function HomeScreen() {
         {/* <Text style={styles.lowerText}>Don't worry, you can change this later!</Text> */}
       </View>
       <View>
-        <Pressable onPress={() => router.push("/create")} style={{backgroundColor: colors.primary, paddingVertical: 12, paddingHorizontal: 24, borderRadius: 200000}}>
-          <Text style={styles.createButtonText}>Let's Create Storybook -></Text>
-        </Pressable>
+        {/* <Pressable onPress={() => router.push("/create")} style={{backgroundColor: colors.primary, paddingVertical: 12, paddingHorizontal: 24, borderRadius: 200000}}> */}
+          <Text style={styles.createButtonText}>Let's Create Storybook </Text>
+        {/* </Pressable> */}
         <View style={{marginTop: 68}}>
           <Text style={styles.lowerText}>Try: "Turn my wedding speech into an audiobook"</Text>
           <Text style={styles.lowerText}>Or: "I wrote a children's story I'd like narrated"</Text>
@@ -104,8 +104,6 @@ const styles = StyleSheet.create({
   lowerText: {
     color: "#162029",
     textAlign: "center",
-    leadingTrim: "both",
-    textEdge: "cap",
     fontFamily: "Euclid Circular B",
     fontSize: 16,
     fontStyle: "normal",
